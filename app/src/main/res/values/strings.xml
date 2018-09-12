@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicketingApplication</string>
+    <string-array name="genre">
+        <item>Horror</item>
+        <item>Comedy</item>
+        <item>Action</item>
+        <item>SciFi</item>
+        <item>Animation</item>
+    </string-array>
+</resources>
