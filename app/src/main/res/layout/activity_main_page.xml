@@ -27,7 +27,7 @@
         android:contentDescription="@string/todo" />
 
     <Spinner
-        android:id="@+id/genre3"
+        android:id="@+id/genre"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginEnd="8dp"
@@ -86,7 +86,7 @@
         android:id="@+id/tvDate"
         android:hint="Select date"
         android:layout_width="46dp"
-        android:layout_height="25"
+        android:layout_height="25dp"
         android:gravity="center"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
