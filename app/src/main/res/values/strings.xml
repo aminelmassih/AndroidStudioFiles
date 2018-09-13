@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">TicketingApplication</string>
+    <string name="genre">GENRE</string>
+    <string name="date">DATE</string>
+    <string name="todo">TODO</string>
     <string-array name="genre">
         <item>Horror</item>
         <item>Comedy</item>
