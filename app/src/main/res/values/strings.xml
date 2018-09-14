@@ -1,13 +1,29 @@
 <resources>
     <string name="app_name">TicketingApplication</string>
+
     <string name="genre">GENRE</string>
     <string name="date">DATE</string>
     <string name="todo">TODO</string>
+    <string name="cities">CITIES</string>
+
     <string-array name="genre">
         <item>Horror</item>
         <item>Comedy</item>
         <item>Action</item>
         <item>SciFi</item>
         <item>Animation</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Montreal</item>
+        <item>Quebec</item>
+        <item>Lévis</item>
+        <item>Laval</item>
+        <item>Gatineau</item>
+        <item>Sherbrooke</item>
+        <item>Saguenay</item>
+        <item>Rimouski</item>
+        <item>Sept-Îles</item>
+        <item>Granby</item>
     </string-array>
 </resources>
