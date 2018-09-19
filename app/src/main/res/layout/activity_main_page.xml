@@ -28,7 +28,7 @@
 
     <Spinner
         android:id="@+id/genre"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -37,6 +37,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_blue_bright"
         android:gravity="center"
+        android:textAlignment="center"
         android:minWidth="@android:dimen/app_icon_size"
         android:popupBackground="@android:drawable/edit_text"
         android:textSize="50sp"
@@ -72,7 +73,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="8dp"
         android:text="@string/genre"
         android:textColor="@android:color/white"
         android:textSize="14sp"
@@ -82,11 +83,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/tvDate"
-        android:layout_width="85dp"
+        android:layout_width="match_parent"
         android:layout_height="23dp"
         android:layout_marginBottom="284dp"
         android:layout_marginEnd="8dp"
@@ -129,7 +130,7 @@
 
     <Spinner
         android:id="@+id/cities"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -138,6 +139,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_blue_bright"
         android:gravity="center"
+        android:textAlignment="center"
         android:minWidth="@android:dimen/app_icon_size"
         android:popupBackground="@android:drawable/edit_text"
         android:textSize="50sp"

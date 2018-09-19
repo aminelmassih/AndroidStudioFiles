@@ -26,4 +26,23 @@
     app:layout_constraintVertical_bias="0.017"
     app:srcCompat="@drawable/icon" />
 
+    <ImageButton
+        android:id="@+id/posterView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.153"
+        app:srcCompat="@color/colorPrimary" />
+
+
 </android.support.constraint.ConstraintLayout>
