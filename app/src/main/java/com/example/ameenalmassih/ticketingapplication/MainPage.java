@@ -1,6 +1,7 @@
 package com.example.ameenalmassih.ticketingapplication;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -20,6 +22,18 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
     private static final String tag = "MainActivity";
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
+    public Button searchBtn;
+
+    public void init(){
+        searchBtn = (Button)findViewById(R.id.searchBTN);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent searchPageBtn = new Intent(MainPage.this, SecondPage.class);
+                startActivity(searchPageBtn);
+            }
+        });
+    }
 
 
     @Override
@@ -66,6 +80,8 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
                 mDisplayDate.setText(date);
             }
         };
+
+        init();
     }
 
 
