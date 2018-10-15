@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,8 +24,15 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     public Button searchBtn;
+    String selectedItem="";
+
 
     public void init(){
+
+//        EditText genreText = spinner.setOnItemSelectedListener(findViewById(R.id.genre));
+//        String text = genreTexst.getText().toString();
+
+
         searchBtn = (Button)findViewById(R.id.searchBTN);
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,8 +44,9 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
     }
 
 
-    @Override
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
 
@@ -47,11 +56,15 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
+        selectedItem=spinner.getSelectedItem().toString();
+
         Spinner spinner2 = findViewById(R.id.cities);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.cities, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
+
+        selectedItem=spinner2.getSelectedItem().toString();
 
 
         mDisplayDate = (TextView) findViewById(R.id.tvDate);
@@ -82,6 +95,8 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
         };
 
         init();
+
+
     }
 
 
@@ -89,8 +104,8 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemSel
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String text = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-    }
 
+    }
 
 
     @Override
